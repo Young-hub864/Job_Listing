@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnPOD Career Portal</title>
+
+    <!-- LINK BOOTSTRAP 4.6-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- LINK JS/JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.jsx" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.jsx" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+    <!-- LINK CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- LINK GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@400;600;700&family=Montserrat:ital,wght@0,300;0,400;1,300&family=Niconne&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER AND NAVIGATION SECTION -->
+    <header>
+        <!-- TOP TOOL BAR-->
+        <div class="bg-dark toolbar p-2">
+            <div class="container d-flex">
+                <div class="col">
+                    <button class="btn btn-secondary">Openings Alerts</button>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-sm btn-link text-white text-decoration-none">LOGIN</button>
+                    <button class="btn btn-sm btn-dark text-white border border-white">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+        <!-- LOGO & SEARCH  BAR -->
+        <nav class="sticky-top p-2 border-bottom shadow-sm">
+            <div class="container d-flex">
+                <div class="col-md-3 logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                <div class="col-md-9 d-none d-md-block">
+                    <form class="d-flex" action="">
+                        <div class="col-auto  mt-1">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text bg-dark text-info"><i class="fa fa-search" aria-hidden="true"></i></div>
+                              </div>
+                              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Job title or keyword">
+                            </div>
+                        </div>
+                        <div class="col mt-1">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text bg-dark text-info"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                                </div>
+                                <select class="custom-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose location</option>
+                                    <option>Delaware, USA</option>
+                                    <option>Limerick, Ireland</option>
+                                    <option>Lagos, Nigeria</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col mt-1">
+                            <button class="btn btn-info">Find Jobs</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-4 pt-4 pb-0">
+            <h3 class="title text-center">Web Developer Application Form</h3>
+        </div>
+        <form action="">
+            <!-- BIO DATA -->
+            <section class="my-5">
+                <div class="container">
+                    <div class="mx-auto">
+                        <h5 class="title">Bio Data</h5>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="fname">First Name</label>
+                                        <input type="fname" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="mname">Middle Name</label>
+                                        <input type="mname" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="lname">Last Name</label>
+                                        <input type="lname" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="Gender">Gender</label>
+                                        <select class="custom-select mr-sm-2" id="">
+                                            <option selected>Choose gender</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="Gender">Marital Status</label>
+                                        <select class="custom-select mr-sm-2" id="">
+                                            <option selected>Choose Status</option>
+                                            <option value="1">Single</option>
+                                            <option value="2">Married</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="DOB">Date of Birth</label>
+                                        <input placeholder="Selected date" type="date" id="date-picker-example" class="form-control datepicker">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-secondary shadow rounded" style="height: 200px;">
+                                    <div class="px-5 py-5">
+                                        <h6 class="text-white">Upload a passport photograph</h6>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!-- PROFESSIONAL DATA -->
+             <section class="bg-light py-5">
+                <div class="container mt-4">
+                    <div class="mx-auto">
+                        <h5 class="title">Professional Data</h5>
+                        <div class="row">
+                            <div class="col-md-8  mb-5 mb-md-0">
+                                <div class="mb-3">
+                                    <h5>Slide base on strenght</h5>
+                                    <div class="d-flex">
+                                        <div class="col pl-0"><span for="customRange1">Back-End</span></div>
+                                        <div class="col text-center"><span for="customRange1" class="text-center">FullStack</span></div>
+                                        <div class="col pr-0"><span for="customRange1" class="fa-pull-right">Front-End</span></div>
+                                    </div>
+                                    <input type="range" class="custom-range" id="customRange1">
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="basic-url">Portfolio Link</label>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="basic-addon3">https://</span>
+                                                </div>
+                                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="basic-url">Other Link</label>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="basic-addon3">https://</span>
+                                                </div>
+                                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="experience">Experience</label>
+                                            <select class="custom-select mr-sm-2" id="">
+                                                <option selected>Select Appropriate</option>
+                                                <option value="1">Fresh Grad</option>
+                                                <option value="2">2 - 4years</option>
+                                                <option value="2">5 - 10years</option>
+                                                <option value="2">10years +</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="email">Choose your stack</label>
+                                            </div>
+                                            <div class="col-md-6 text-md-right">
+                                                <small><span class="badge badge-secondary">Ctrl + Click</span> for multiple</small>
+                                            </div>
+                                        </div>
+                                        
+                                        <select class="custom-select" multiple style="height: 80%;">
+                                            <option value="HTML">HTML</option>
+                                            <option value="CSS">CSS</option>
+                                            <option value="CSS">BootStrap</option>
+                                            <option value="PHP">PHP</option>
+                                            <option value="Python">Python</option>
+                                            <option value="JavaScript">JavaScript</option>
+                                            <option value="JAVA">JAVA</option>
+                                            <option value="React">React</option>
+                                            <option value="React Native">React Native</option>
+                                            <option value="Flutter">Flutter</option>
+                                            <option value="GO">GO</option>
+                                            <option value="MySQL">MySQL</option>
+                                            <option value="SQL">SQL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-secondary shadow rounded" style="height: 200px;">
+                                    <div class="px-5 py-5">
+                                        <h6 class="text-white">Upload CV <small>(.PDF File Only)</small></h6>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT INFO -->
+            <section>
+                <div class="container mt-5">
+                    <div class="mx-auto">
+                        <h5 class="title">Contact Information</h5>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-row">
+                                    <div class="form-group col-md-8">
+                                        <label for="saddress">Street Address</label>
+                                        <input type="sadddress" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="city">City/Town</label>
+                                        <input type="city" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="zipcode">Zipcode</label>
+                                        <input type="zipcode" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="state">State</label>
+                                        <input type="state" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="Gender">Country</label>
+                                        <select class="custom-select mr-sm-2" id="">
+                                            <option selected>Choose Country</option>
+                                            <option value="1">Nigeria</option>
+                                            <option value="2">South Africa</option>
+                                            <option value="2">Ireland</option>
+                                            <option value="2">United States of America</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="phone" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="altPhone">Alternative Phone</label>
+                                        <input type="altPhone" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-light shadow rounded">
+                                    
+                                    <div class="px-4 py-4">
+                                        <div class="border-bottom mb-3"><h5><strong>More Info</strong></h5></div>
+                                        <h6>Choose Interview Type</h6>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">Physical</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Virtual</label>
+                                        </div>
+                                        <hr>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label small" for="customCheck1">I confirm that all information provided are true and correct</label>
+                                        </div>
+                                        <hr>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                            <label class="custom-control-label" for="customSwitch1">Subscribe to Our Newsletter</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="container my-5">
+                <div class="d-flex">
+                    <div class="col-md-3 offset-md-2">
+                        <button class="btn btn-secondary">Save Application</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-info">Submit Application</button>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </main>
+
+    <!-- FOOTER STARTS -->
+    <footer class="navbar navbar-bottom bg-dark mt-5">
+        <div class="container">
+            <div class="d-flex pt-5 pb-2">
+                <div class="col text-center text-md-left">
+                    <img src="images/logo.png" alt="">
+                    <p class="small text-white">
+                        At LearnPOD, our rich history is the foundation for our values. Join us to make your learning experience unforgettable.
+                    </p>
+                </div>
+                <div class="col d-none d-md-block mt-4">
+                    <ul class="text-secondary small">
+                        <li>link option</li>
+                        <li>link option</li>
+                        <li>link option</li>
+                        <li>link option</li>
+                    </ul>
+                </div>
+                <div class="col d-none d-md-block mt-4">
+                    <ul class="text-secondary small">
+                        <li>link option</li>
+                        <li>link option</li>
+                        <li>link option</li>
+                        <li>link option</li>
+                    </ul>
+                </div>
+                <div class="col d-none d-md-block mt-4">
+                    <ul class="text-secondary small">
+                        <li>link option</li>
+                        <li>link option</li>
+                        <li>link option</li>
+                        <li>link option</li>
+                    </ul>
+                </div>
+                <div class="col d-none d-md-block mt-4">
+                    <h6 class="text-white text-bold m-2">Join our newsletter</h6>
+                    <form action="">
+                        <input type="text" placeholder="enter email" class="form-control m-2 bg-dark text-white">
+                        <button class="btn btn-info m-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-white text-center small pb-5">© 2021 LearnPOD Academy. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>

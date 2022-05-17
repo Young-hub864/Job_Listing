@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnPOD Career Portal</title>
+
+    <!-- LINK BOOTSTRAP 4.6-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- LINK JS/JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.jsx" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.jsx" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+    <!-- LINK CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- LINK GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@400;600;700&family=Montserrat:ital,wght@0,300;0,400;1,300&family=Niconne&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER AND NAVIGATION SECTION -->
+    <header>
+        <!-- TOP TOOL BAR-->
+        <div class="bg-dark toolbar p-2">
+            <div class="container d-flex">
+                <div class="col">
+                    <button class="btn btn-secondary">Openings Alerts</button>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-sm btn-link text-white text-decoration-none">LOGIN</button>
+                    <button class="btn btn-sm btn-dark text-white border border-white">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+        <!-- LOGO & SEARCH  BAR -->
+        <nav class="sticky-top p-2 border-bottom shadow-sm">
+            <div class="container d-flex">
+                <div class="col-md-3 logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                <div class="col-md-9 d-none d-md-block">
+                    <form class="d-flex" action="">
+                        <div class="col-auto  mt-1">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text bg-dark text-info"><i class="fa fa-search" aria-hidden="true"></i></div>
+                              </div>
+                              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Job title or keyword">
+                            </div>
+                        </div>
+                        <div class="col mt-1">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text bg-dark text-info"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                                </div>
+                                <select class="custom-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose location</option>
+                                    <option>Delaware, USA</option>
+                                    <option>Limerick, Ireland</option>
+                                    <option>Lagos, Nigeria</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col mt-1">
+                            <button class="btn btn-info">Find Jobs</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-4 pt-4 pb-0">
+            <h3 class="title text-center">Current Job Openings</h3>
+        </div>
+        
+    </main>
+
+    <!-- FOOTER STARTS -->
+    <footer class="navbar navbar-bottom bg-dark mt-5">
+        <div class="container">
+            <div class="d-flex pt-5 pb-2">
+                <div class="col text-center text-md-left">
+                    <img src="images/logo.png" alt="">
+                    <p class="small text-white">
+                        At LearnPOD, our rich history is the foundation for our values. Join us to make your learning experience unforgettable.
+                    </p>
+                </div>
+                <div class="col d-none d-md-block mt-4">
+                    <ul class="text-secondary small">
+                        <li>link option</li>
+                        <li>link option</li>
+                        <li>link option</li>
+                        <li>link option</li>
+                    </ul>
+                </div>
+                <div class="col d-none d-md-block mt-4">
+                    <ul class="text-secondary small">
+                        <li>link option</li>
+                        <li>link option</li>
+                        <li>link option</li>
+                        <li>link option</li>
+                    </ul>
+                </div>
+                <div class="col d-none d-md-block mt-4">
+                    <ul class="text-secondary small">
+                        <li>link option</li>
+                        <li>link option</li>
+                        <li>link option</li>
+                        <li>link option</li>
+                    </ul>
+                </div>
+                <div class="col d-none d-md-block mt-4">
+                    <h6 class="text-white text-bold m-2">Join our newsletter</h6>
+                    <form action="">
+                        <input type="text" placeholder="enter email" class="form-control m-2 bg-dark text-white">
+                        <button class="btn btn-info m-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-white text-center small pb-5">© 2021 LearnPOD Academy. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>

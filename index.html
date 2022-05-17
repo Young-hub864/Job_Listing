@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LearnPOD Career Portal</title>
+      <!-- LINK BOOTSTRAP 4.6-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <!-- LINK JS/JQUERY -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <!-- LINK CUSTOM CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- LINK GOOGLE FONTS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Martel:wght@400;600;700&family=Montserrat:ital,wght@0,300;0,400;1,300&family=Niconne&display=swap" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- HEADER AND NAVIGATION SECTION -->
+      <header>
+         <!-- TOP TOOL BAR-->
+         <div class="bg-dark toolbar p-2">
+            <div class="container d-flex">
+               <div class="col">
+                  <button class="btn btn-secondary">Openings Alerts</button>
+               </div>
+               <div class="col d-flex justify-content-end">
+                  <button class="btn btn-sm btn-link text-white text-decoration-none">LOGIN</button>
+                  <button class="btn btn-sm btn-dark text-white border border-white">SIGN UP</button>
+               </div>
+            </div>
+         </div>
+         <!-- LOGO & SEARCH  BAR -->
+         <nav class="navbar sticky-top p-2 border-bottom shadow-sm">
+            <div class="container d-flex">
+               <div class="col-md-3 logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+               <div class="col-md-9 d-none d-md-block">
+                  <form class="d-flex" action="">
+                     <div class="col-auto  mt-1">
+                        <div class="input-group">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text bg-dark text-info"><i class="fa fa-search" aria-hidden="true"></i></div>
+                           </div>
+                           <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Job title or keyword">
+                        </div>
+                     </div>
+                     <div class="col mt-1">
+                        <div class="input-group">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text bg-dark text-info"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                           </div>
+                           <select class="custom-select" id="validationCustom04" required>
+                              <option selected disabled value="">Choose location</option>
+                              <option>Delaware, USA</option>
+                              <option>Limerick, Ireland</option>
+                              <option>Lagos, Nigeria</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col mt-1">
+                        <button class="btn btn-info">Find Jobs</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <!--CAROUSEL-->
+         <section class="d-none d-md-block">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img style="height:500px;" class="w-100" src="images/img5.jpg" alt="First slide">
+                  <div class="carousel-caption">
+                     <div class="col-md-6">
+                        <h2>Be Part of Our Amazing Story</h2>
+                        <p>LearnPOD Academy is a big family connecting different people from different places in the world. We are making  ground breaking innovations that you would like to be a crew member.</p>
+                        <a href="jobs.html">
+                        <button class="btn btn-info">See Openings</button>
+                        </a>
+                        <button class="btn btn-light">Follow LearnPod Careers</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img style="height:500px;" class="d-block w-100" src="images/img6.jpg" alt="Second slide">
+               </div>
+               <div class="carousel-caption">
+                  <div class="col-md-6">
+                     <h2>Be Part of Our Amazing Story</h2>
+                     <p>LearnPOD Academy is a big family connecting different people from different places in the world. We are making  ground breaking innovations that you would like to be a crew member.</p>
+                     <a href="jobs.html">
+                     <button class="btn btn-info">See Openings</button>
+                     </a>
+                     <a href="apply.html">
+                     <button class="btn btn-light">Follow LearnPod Careers</button>
+                     </a>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+         </section>
+         <section class="container">
+            <div class="row">
+               <div class="col-md-8">
+                  <div class="mt-5">
+                     <h1 class="text-center title">Why Join Us</h1>
+                  </div>
+                  <div>
+                     <ul>
+                        <li><strong>The growth place: </strong> At LearnPOD, grow is key, we love to grow with our workers.</li>
+                        <li><strong>Sponsored trainings:</strong> When said growth is key, mean every word of the statement.</li>
+                        <li><strong>Extra-curriculars:</strong> People that work hard deserves to play hard.</li>
+                        <li><strong>Unlimited leave:</strong> Rest is paramount as much as we love workaholics.</li>
+                     </ul>
+                     <div class="text-center">
+                        <h4>Have more questions?</h4>
+                        <h6><a class="btn btn-info btn-sm" href="#">Ask</a> the Talent Managers @ LearnPOD</h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 d-block bg-info">
+                  <div class="mt-5">
+                     <h4 class="text-center text-white">Check Application Status</h4>
+                     <div class="col-auto my-4 mb-5">
+                        <form action="">
+                           <div class="m-3">
+                              <input type="email" class="form-control" placeholder="Enter registration email" required>
+                           </div>
+                           <div class="m-3">
+                              <input type="text" class="form-control" placeholder="Enter application code" required>
+                           </div>
+                           <div class="m-3">
+                              <button class="btn btn-dark">Submit</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="container">
+            <div class="mt-5">
+               <h1 class="text-center title">Featured Openings</h1>
+            </div>
+            <div class="row">
+               <div class="col-md-3 mb-2">
+                  <div class="card" style="width: 100%;">
+                     <div class="card-body">
+                        <h5 class="card-title">Business Dev. Associate</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Lagos, Nigeria.</h6>
+                        <p class="card-text">
+                           <strong>Job Description:</strong> Users/Students/Talent accusition. Getting Partnerships and coporate deals. Candidate must have good interpersonal relationship.
+                        </p>
+                        <p class="card-text border-top border-bottom p-2">Closing Date: 12-Sept.-2022</p>
+                        <a href="#" class="btn btn-light btn-sm">Save</a>
+                        <a href="#" class="btn btn-info btn-sm">Learn more</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 mb-2">
+                  <div class="card" style="width: 100%;">
+                     <div class="card-body">
+                        <h5 class="card-title">Section Manager</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Lagos, Nigeria.</h6>
+                        <p class="card-text">
+                           <strong>Job Description:</strong> Sections/Category research and development. Oversee traffic accusition and retention. Content ideas and overall setion growth.
+                        </p>
+                        <p class="card-text border-top border-bottom p-2">Closing Date: 21-Mar.-2022</p>
+                        <a href="#" class="btn btn-light btn-sm">Save</a>
+                        <a href="#" class="btn btn-info btn-sm">Learn more</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 mb-2">
+                  <div class="card" style="width: 100%;">
+                     <div class="card-body">
+                        <h5 class="card-title">Finance Manager</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Limerick, Ireland.</h6>
+                        <p class="card-text">
+                           <strong>Job Description:</strong> Handling overall finance including income and expenses, payroll, bonuses, tips and commission. Candidate must have good accounting experience.
+                        </p>
+                        <p class="card-text border-top border-bottom p-2">Closing Date: 21-Oct.-2022</p>
+                        <a href="#" class="btn btn-light btn-sm">Save</a>
+                        <a href="#" class="btn btn-info btn-sm">Learn more</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 mb-2">
+                  <div class="card" style="width: 100%;">
+                     <div class="card-body">
+                        <h5 class="card-title">Web Developer <small>(Backend)</small></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Lagos, Nigeria.</h6>
+                        <p class="card-text">
+                           <strong>Job Description:</strong> Candidate must be an experienced backend dev., with solution driven mindset. Candidatte must have verifyable evidence of required stacks.
+                        </p>
+                        <p class="card-text border-top border-bottom p-2">Closing Date: 12-Jun.-2022</p>
+                        <a href="#" class="btn btn-light btn-sm">Save</a>
+                        <a href="#" class="btn btn-info btn-sm">Learn more</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="text-center mt-4">
+               <a class="btn btn-info" href="jobs.html">See All Openings</a>
+            </div>
+         </section>
+      </main>
+      <!-- FOOTER STARTS -->
+      <footer class="navbar navbar-bottom bg-dark mt-5">
+         <div class="container">
+            <div class="d-flex pt-5 pb-2">
+               <div class="col text-center text-md-left">
+                  <img src="images/logo.png" alt="">
+                  <p class="small text-white">
+                     At LearnPOD, our rich history is the foundation for our values. Join us to make your learning experience unforgettable.
+                  </p>
+               </div>
+               <div class="col d-none d-md-block mt-4">
+                  <ul class="text-secondary small">
+                     <li>link option</li>
+                     <li>link option</li>
+                     <li>link option</li>
+                     <li>link option</li>
+                  </ul>
+               </div>
+               <div class="col d-none d-md-block mt-4">
+                  <ul class="text-secondary small">
+                     <li>link option</li>
+                     <li>link option</li>
+                     <li>link option</li>
+                     <li>link option</li>
+                  </ul>
+               </div>
+               <div class="col d-none d-md-block mt-4">
+                  <ul class="text-secondary small">
+                     <li>link option</li>
+                     <li>link option</li>
+                     <li>link option</li>
+                     <li>link option</li>
+                  </ul>
+               </div>
+               <div class="col d-none d-md-block mt-4">
+                  <h6 class="text-white text-bold m-2">Join our newsletter</h6>
+                  <form action="">
+                     <input type="text" placeholder="enter email" class="form-control m-2 bg-dark text-white">
+                     <button class="btn btn-info m-2">Subscribe</button>
+                  </form>
+               </div>
+            </div>
+            <div class="text-white text-center small pb-5">© 2021 LearnPOD Academy. All rights reserved.</div>
+         </div>
+      </footer>
+   </body>
+</html>

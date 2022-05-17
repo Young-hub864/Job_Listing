@@ -1,0 +1,41 @@
+
+.toolbar {
+    font-size: 12px;
+}
+
+.toolbar button{
+    font-size: 12px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quote{
+    font-family: 'Niconne', cursive;
+}
+
+.title{
+    font-family: 'Martel', serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-text{
+    font-size: 13px;
+}
+
+.card-title{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
+}
+
+.carousel-caption{
+    position:absolute !important;
+    padding-bottom: 5rem !important;
+    text-align: left !important;
+}
